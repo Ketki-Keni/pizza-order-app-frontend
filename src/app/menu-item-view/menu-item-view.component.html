@@ -1,0 +1,27 @@
+<div id="bg">
+    <h1>Pizza Menu</h1>
+
+    <div id="container">
+        <div *ngFor="let eachItem of menuList" >
+            
+                <mat-card id="card">
+                    <mat-card-content>
+                        <a routerLink="/menu/{{eachItem.id}}">
+                            <img src="{{eachItem.imageUrl}}" class="image" width="100%" height="100%"/> <br/>
+                            <div class="title">
+                                {{eachItem.category}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                {{eachItem.itemName}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                {{eachItem.price | currency:'INR'}}
+                            </div>
+                        </a>   
+                        <!-- <a routerLink="/cart" id="btn"> -->
+                            <div>
+                                <button color="primary" mat-button mat-raised-button id="submit" type="submit" (click)="addToCart(eachItem)">Order Now</button>
+                            </div>
+                        <!-- </a>  -->
+                    </mat-card-content>
+                </mat-card>  
+            
+        </div>
+    </div>
+</div>

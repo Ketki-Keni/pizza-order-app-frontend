@@ -1,0 +1,38 @@
+
+#bg{
+    background-color: #f3fdfe;
+}
+h1{
+    padding-top: 2%;
+    text-align: center;
+    color: indigo;
+    font-size: 40px;
+}
+#container{
+    text-align: center;
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+    column-gap: 3%;
+}
+#card{
+    margin-bottom: 8%; 
+    border-radius: 2%; 
+}
+.title{
+    margin: 4%;
+}
+button{
+    padding: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 50px;
+    color: white;
+}
+img{
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
+}

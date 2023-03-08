@@ -1,0 +1,21 @@
+#form-container{
+    margin: 1%;
+    margin-left: 6%;
+}
+form{
+    text-align: center;
+}
+h2{
+    color: indigo;
+    margin-left: 32%;
+}
+#email{
+    width: 38%;
+}
+#password{
+    width: 38%;
+}
+button{
+    padding-left: 10%;
+    padding-right: 10%;
+}

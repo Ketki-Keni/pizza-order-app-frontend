@@ -1,0 +1,22 @@
+#form-container{
+    margin: 1%;
+    margin-left: 6%;
+}
+h2{
+    color: indigo;
+}
+mat-form-field{
+    width: 38%;
+}
+#buttons{
+    margin-left: 4%;
+}
+#reset{
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-right: 4%;
+}
+#submit{
+    padding-left: 4%;
+    padding-right: 4%;
+}

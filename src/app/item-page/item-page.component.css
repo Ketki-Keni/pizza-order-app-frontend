@@ -1,0 +1,17 @@
+mat-card{
+    margin: 4%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#card{
+    display: flex;
+}
+.details{
+    font-size: 25px;
+    margin-left: 4%;
+    text-align: center;
+}
+button{
+    border-radius: 50px;
+    width: 100%;
+}

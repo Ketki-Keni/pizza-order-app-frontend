@@ -1,0 +1,21 @@
+<div id="container">
+    <mat-card>
+        <mat-card-content id="card">
+            <img src="{{menu1.imageUrl}}" class="image" width="480px" height="380px"/> <br/>
+            <div class="details">
+                <div>
+                    {{menu1.itemName}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div> <br>
+                <div>
+                    {{menu1.category}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div><br>
+                <div>
+                    <span>&#8377;</span>{{menu1.price}}
+                </div> <br> 
+                <div>
+                    <button type="submit" color="primary" mat-button mat-raised-button id="submit" (click)="addToCart(menu1)">Order Now</button>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>  
+</div>

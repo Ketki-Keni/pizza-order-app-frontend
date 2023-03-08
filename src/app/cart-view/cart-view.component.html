@@ -1,0 +1,59 @@
+<div *ngIf="cartItems.length === 0" id="container">
+<!-- <div *ngIf="false" id="container"> -->
+    <mat-card>
+        <mat-card-content>
+            <div>
+                <h1>My Cart</h1>
+            </div>
+            <div>
+               <img src="../../assets/images/empty-cart.png" >
+                <h2>Your Cart is Empty</h2>
+                <h3>Add something delicious to order now</h3>
+                <button routerLink="/login/menu" color="primary" mat-button mat-raised-button id="submit" type="submit">Order Now</button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<div *ngIf="cartItems.length != 0" id="container">   
+<!-- <div id="container"> -->
+    <div >
+        <button class="btn" color="warn" mat-button mat-raised-button (click)="emptyCart()" type="submit">
+            Empty Cart
+        </button>
+        <button class="btn" routerLink="/login/menu" color="primary" mat-button mat-raised-button type="submit">Continue to Order</button> 
+        <button class="btn" color="primary" mat-button mat-raised-button type="submit">
+            Checkout
+        </button>
+    </div>
+    
+    <table>
+        <thead>
+            <td>Image</td>
+            <td>Name</td>
+            <td>category</td>
+            <!-- <td>quantity</td> -->
+            <td>price</td>
+            <!-- <td>Sub total</td> -->
+        </thead>
+       
+        <tr *ngFor="let item of cartItems">
+            <td><img src="{{item.imageUrl}}" style="width: 100px; height: 100px;"></td>
+            <td>{{item.itemName}}</td>
+            <td>{{item.category}}</td>
+            <!-- <td>{{item.quantity}}</td> -->
+            <!-- <td><input type="text" (keyup)="quantity(value1.value)" #value1 ></td> -->
+            <td>{{item.price}}</td>
+            <!-- <td>{{amount}}</td> -->
+            <!-- <td>{{item.totalPrice}}</td> -->
+            <td>
+                <button type="submit" color="warn" mat-button mat-raised-button (click)="removeItem(item.id)" >
+                    <mat-icon class="icon">delete</mat-icon> 
+                </button>
+            </td>
+        </tr>
+        <!-- <tr>
+            <td><strong>Total: </strong> {{totalPrice | currency:'INR'}}</td>
+        </tr> -->
+    </table>
+</div>

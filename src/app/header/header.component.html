@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+    <div id="header">
+        <div id="title-block">
+          <a id="home-link" routerLink="register">
+            <h1>Wat-a-pizza</h1>
+          </a>
+        </div>
+        <div>
+          <!-- Navigation Bar -->
+          <a routerLink="/home">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;
+          <a routerLink="/login/menu">Menu</a> &nbsp;&nbsp;&nbsp;&nbsp;
+          <a routerLink="/register">Sign Up</a> &nbsp;&nbsp;&nbsp;&nbsp;
+          <a routerLink="/login">Log In</a> &nbsp;&nbsp;&nbsp;&nbsp;
+          <a (click)="logout()">Log Out</a>
+        </div>
+        <div id="navbar">
+          <a routerLink="/home" >
+            <button mat-icon-button matTooltip="Home">
+              <mat-icon class="icon">home</mat-icon>  
+            </button>
+          </a>
+          <a routerLink="/cart" >
+            <button mat-icon-button matTooltip="Apps">
+              <mat-icon class="icon">shopping_cart</mat-icon>
+              <!-- <div *ngIf="cartItems.length > 0">
+                <span>{{totalItem}}</span>
+              </div> -->
+              
+            </button>
+          </a>
+        </div>
+      </div>
+      </mat-toolbar>

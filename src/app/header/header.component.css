@@ -1,0 +1,50 @@
+
+.mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+#title-block {
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    margin: 0;
+}
+.icon {
+    margin-right: 10px;
+}
+#home-link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.toolbar1 {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #09294a;
+    color: white;
+    font-weight: 600;
+}
+span{
+    background-color: red;
+    padding: 2px;
+    height: 0.2px;
+}
